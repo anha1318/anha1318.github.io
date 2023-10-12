@@ -26,7 +26,7 @@
     margin-left: 36px;
 }
 
-.home-link{
+.home-link:link{
     text-decoration: none;
     color:black;
 }
