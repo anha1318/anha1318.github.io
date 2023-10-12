@@ -26,8 +26,9 @@
     margin-left: 36px;
 }
 
-.home-link{
+.home-link:link{
     text-decoration: none;
+    color: black;
 }
 
 .home-link:visited{
@@ -46,8 +47,9 @@
     margin-left: 36px;
 }
 
-.menu-link{
+.menu-link:link{
     text-decoration: none;
+    color: black;
 }
 
 .menu-link:visited{
@@ -106,6 +108,11 @@
     padding-top: 23px;
     padding-right: 22px;
     padding-left: 100px;
+}
+
+.logo-link:link{
+    color: white;
+    text-decoration: none;
 }
 
 .logo-link:visited{
