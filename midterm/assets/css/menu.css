@@ -4,24 +4,27 @@
 }
 
 .nav{
-    width: 262px;
-    height: 3240px;
+    width: 300px;
+    height: 100vh;
     background-color: #CDBE9D;
+    position: fixed;
 }
 
 .main{
     position: relative;
-}
-
-.background-img{
-    position: absolute;
+    width: 100vw;
+    background-size: 100vw;
+    background-image: url('../img/background_pic.png');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
     z-index: -1;
 }
+
 
 .click-on-home{
     font-family: 'Amaranth';
     color: black;
-    font-size: 36px;
+    font-size: 50px;
     padding-top: 67px;
     margin-left: 36px;
 }
@@ -42,7 +45,7 @@
 .click-on-menu{
     font-family: 'Amaranth';
     color: black;
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
     padding-top: 44px;
     margin-left: 36px;
@@ -64,15 +67,15 @@
 .click-on-order{
     font-family: 'Amaranth';
     color: black;
-    font-size: 36px;
+    font-size: 50px;
     padding-top: 44px;
+    margin-bottom: 150px;
     margin-left: 36px;
 }
-
 .copyright-statement{
     font-family: 'Amaranth';
     color: black;
-    font-size: 24px;
+    font-size: 30px;
     padding-top: 638px;
     padding-right: 36px;
     padding-left: 36px;
@@ -108,9 +111,9 @@
 }
 
 .header-logo{
-    padding-top: 23px;
-    padding-right: 22px;
-    padding-left: 100px;
+    margin-top: 23px;
+    margin-right: 22px;
+    margin-left: 250px;
 }
 
 .logo-link:link{
@@ -122,22 +125,22 @@
     color: white;
     text-decoration: none;
 }
+
 .logo-credit{
     color:white;
-    margin-left: 85px;
-    font-size: 20px;
+    margin-left: 220px;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
 }
 
 .header-title{
     display: flex;
     flex-direction: row;
-    font-family:'Amarante';
+    font-family: 'Amarante';
     color: white;
-    font-size: 100px;
-    padding-top: 15px;
-    padding-right: 99px;
-    padding-left: 22px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 120px;
+    margin-left: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
 }
 
 .main-contents{
@@ -150,7 +153,8 @@
     font-family: 'Amaranth';
     color: white;
     font-size: 96px;
-    margin-left: 20px;
+    margin-right: 200px;
+    margin-left: 400px;
     margin-bottom: 40px;
     background-color: #B39132;
     padding-top: 42px;
@@ -179,7 +183,30 @@
 }
 
 .appetizers-box{
+    display: flex;
+    flex-direction: column;
     position: relative;
+}
+
+.appetizers-img img{
+    border-radius: 169px;
+}
+
+.appetizers-img{
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 322px;
+}
+
+.appetizers-text{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Amarante';
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 400px;
+    margin-left: 315px;
 }
 
 .rectangle-1{
@@ -187,26 +214,54 @@
     width: 674px;
     background-color: white;
     border-radius: 65px;
-    opacity: 50%;
+    opacity: 70%;
     margin-top: 40px;
     margin-right: 40px;
     margin-bottom: 30px;
+    margin-left: 200px;
+    position: relative;
+    z-index: -1;
+}
+
+.vegetarian-box{
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 
-#appetizers-img{
-    margin-right: 100px;
+
+.vegetarian-box img{
+    border-radius: 169px;
 }
+
+.vegetarian-img{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 168px;
+}
+
+.vegetarian-text{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Amarante';
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 400px;
+    margin-left: 145px;
+}
+
 .rectangle-2{
     height: 512px;
     width: 674px;
     background-color: white;
     border-radius: 65px;
-    opacity: 50%;
+    opacity: 70%;
     margin-top: 40px;
     margin-right: 20px;
     margin-bottom: 30px;
     margin-left: 40px;
+    position: relative;
+    z-index: -1;
 }
 
 .menu-items-row-2{
@@ -214,27 +269,73 @@
     flex-direction: row;
 }
 
+.poultry-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.poultry-box img{
+    border-radius: 169px;
+}
+
+.poultry-img{
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-left: 322px; 
+}
+
+.poultry-text{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Amarante';
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 400px;
+    margin-left: 375px;
+}
+
+.beef-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.beef-box img{
+    border-radius: 169px;
+}
+
+.beef-img{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.beef-text{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Amarante';
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 400px;
+    margin-left: 280px;
+}
+
 .rectangle-3{
     height: 512px;
     width: 674px;
     background-color: white;
     border-radius: 65px;
-    opacity: 50%;
+    opacity: 70%;
     margin-top: 40px;
     margin-right: 40px;
     margin-bottom: 30px;
-}
-
-.rectangle-4{
-    height: 512px;
-    width: 674px;
-    background-color: white;
-    border-radius: 65px;
-    opacity: 50%;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-left: 40px;
+    margin-left: 200px;
+    position: relative;
+    z-index: -1;
 }
 
 .menu-items-row-3{
@@ -242,32 +343,165 @@
     flex-direction: row;
 }
 
+.lamb-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.lamb-box img{
+    border-radius: 169px;
+}
+
+.lamb-img{
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-left: 270px; 
+}
+
+.lamb-text{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Amarante';
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 400px;
+    margin-left: 428px;
+}
+
+
+.desserts-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.desserts-box img{
+    border-radius: 169px;
+}
+
+.desserts-img{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.desserts-text{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Amarante';
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 400px;
+    margin-left: 200px;
+}
+
+.rectangle-4{
+    height: 512px;
+    width: 674px;
+    background-color: white;
+    border-radius: 65px;
+    opacity: 70%;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    position: relative;
+    z-index: -1;
+}
+
+
 .rectangle-5{
     height: 512px;
     width: 674px;
     background-color: white;
     border-radius: 65px;
-    opacity: 50%;
+    opacity: 70%;
     margin-top: 40px;
     margin-right: 40px;
     margin-bottom: 30px;
+    margin-left: 200px;
+    position: relative;
+    z-index: -1;
 }
+
 
 .rectangle-6{
     height: 512px;
     width: 674px;
     background-color: white;
     border-radius: 65px;
-    opacity: 50%;
+    opacity: 70%;
     margin-top: 40px;
     margin-right: 20px;
     margin-bottom: 30px;
     margin-left: 40px;
+    position: relative;
+    z-index: -1;
 }
+
 
 .menu-items-row-4{
     display: flex;
     flex-direction: row;
+}
+
+.hot-drinks-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hot-drinks-box img{
+    border-radius: 169px;
+}
+
+.hot-drinks-text{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Amarante';
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 400px;
+    margin-left: 310px;
+}
+
+.hot-drinks-img{
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-left: 340px; 
+}
+
+.cold-drinks-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.cold-drinks-box img{
+    border-radius: 169px;
+}
+
+.cold-drinks-img{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 175px;
+}
+
+.cold-drinks-text{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Amarante';
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 400px;
+    margin-left: 130px;
 }
 
 .rectangle-7{
@@ -275,10 +509,13 @@
     width: 674px;
     background-color: white;
     border-radius: 65px;
-    opacity: 50%;
+    opacity: 70%;
     margin-top: 40px;
     margin-right: 40px;
     margin-bottom: 30px;
+    margin-left: 200px;
+    position: relative;
+    z-index: -1;
 }
 
 .rectangle-8{
@@ -286,9 +523,11 @@
     width: 674px;
     background-color: white;
     border-radius: 65px;
-    opacity: 50%;
+    opacity: 70%;
     margin-top: 40px;
     margin-right: 20px;
     margin-bottom: 30px;
     margin-left: 40px;
+    position: relative;
+    z-index: -1;
 }

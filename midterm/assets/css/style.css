@@ -2,25 +2,29 @@
     flex-direction: row;
     display: flex;
 }
+
 .nav{
-    width: 262px;
-    height: 1080px;
+    width:300px;
+    height: 100vh;
     background-color: #CDBE9D;
+    position: fixed;
 }
 
 .main{
     position: relative;
-}
-
-.background-img{
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100vw;
+    background-image: url('../img/background_pic.png');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
     z-index: -1;
 }
 
 .click-on-home{
     font-family: 'Amaranth';
     color: black;
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
     padding-top: 67px;
     margin-left: 36px;
@@ -42,7 +46,7 @@
 .click-on-menu{
     font-family: 'Amaranth';
     color: black;
-    font-size: 36px;
+    font-size: 50px;
     padding-top: 44px;
     margin-left: 36px;
 }
@@ -62,15 +66,16 @@
 .click-on-order{
     font-family: 'Amaranth';
     color: black;
-    font-size: 36px;
+    font-size: 50px;
     padding-top: 44px;
+    margin-bottom: 150px;
     margin-left: 36px;
 }
 
 .copyright-statement{
     font-family: 'Amaranth';
     color: black;
-    font-size: 24px;
+    font-size: 30px;
     padding-top: 638px;
     padding-right: 36px;
     padding-left: 36px;
@@ -88,10 +93,6 @@
     text-decoration: none;
 }
 
-.background-img{
-    filter: brightness(55%);
-}
-
 .header-title-logo{
     display: flex;
     flex-direction: row;
@@ -105,9 +106,9 @@
 }
 
 .header-logo{
-    padding-top: 23px;
-    padding-right: 22px;
-    padding-left: 100px;
+    margin-top: 23px;
+    margin-right: 22px;
+    margin-left: 250px;
 }
 
 .logo-link:link{
@@ -121,8 +122,9 @@
 }
 .logo-credit{
     color:white;
-    margin-left: 85px;
-    font-size: 20px;
+    margin-left: 220px;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
 }
 
 .header-title{
@@ -130,11 +132,9 @@
     flex-direction: row;
     font-family: 'Amarante';
     color: white;
-    font-size: 100px;
-    padding-top: 15px;
-    padding-right: 99px;
-    padding-left: 22px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 120px;
+    margin-left: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
 }
 
 .main-contents{
@@ -147,44 +147,42 @@
     font-family: 'Amaranth';
     color: white;
     font-size: 48px;
-    margin-left: 100px;
+    margin-left: 350px;
     background-color: #B39132;
     padding-right: 42px;
     padding-left: 42px;
     border-radius: 100px;
 }
 
-
 h1 {
     font-family: 'Amarante';
     color: white;
-    font-size: 70px;
-    margin-left: 200px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 90px;
+    margin-left: 450px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
     margin-bottom: 5px;
+
 }
 
 h2{
     font-family:'Amaranth';
-    font-size: 45px;
+    font-size: 55px;
     color: white;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
     margin-top: 5px;
-    margin-left: 100px;
-    text-decoration: underline;
+    margin-left: 350px;
 }
 
 h2:hover{
     cursor: pointer;
+    text-decoration: underline;
 }
-
-
 
 .order-button{
     font-family: 'Amaranth';
     color: white;
-    font-size: 48px;
-    margin-left: 110px;
+    font-size: 100px;
+    margin-left: 300px;
     margin-bottom: 15px;
     background-color: #B39132;
     padding-top: 30px;
@@ -196,8 +194,7 @@ h2:hover{
 }
 
 .order-button:hover{
-    transform: scale(1.1);
-    transition: 0.1s;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -206,25 +203,25 @@ h3{
     color:white;
     margin-top: 15px;
     margin-bottom: 5px;
-    margin-left: 180px;
-    font-size: 60px;
-    text-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+    margin-left: 420px;
+    font-size: 80px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
 }
 
 h4{
     font-family:'Amaranth';
-    font-size: 45px;
+    font-size: 55px;
     color: white;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
     margin-top: 5px;
-    margin-left: 100px;
+    margin-left: 350px;
     margin-bottom: 60px;
 }
 
 .bg-img-credit{
     color:white;
     font-size: 20px;
-    margin-top: 60px;
-    margin-bottom: 9px;
-    margin-left: 40px;
+    margin-top: 100px;
+    margin-left: 340px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
 }
