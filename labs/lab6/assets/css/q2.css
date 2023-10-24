@@ -1,0 +1,68 @@
+/* ADD ANY LINES OF CODE YOU DEEM NECESSARY FOR QUESTION 2*/
+
+#ball {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fd6c2d;
+    z-index: 1;
+    transform: translateY(-200px);
+    animation-name: bounce;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 0.42, 0, 0.7, 0.5;
+}
+
+#shadow {
+    height: 50px;
+    width: 160px;
+    background: black;
+    opacity: 0.5;
+    border-radius: 50%;
+    animation-name: shadowChange;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 0.42, 0, 0.7, 0.5;
+}
+
+#ball, #shadow {
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+}
+
+body, html {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background: #f7f5f2;
+    position: relative;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-200px);}
+
+    50% { transform: translateY(30px);}
+
+    100% {transform: translateY(-200px);}
+}
+
+@keyframes shadowChange {
+    0% {
+        scale: 100%;
+        opacity: 0.5;
+    }
+
+    50% {
+        scale: 50%;
+        opacity: 0.6;
+    }
+
+    100% {
+        scale: 100%;
+        opacity: 0.5;
+    }
+}
