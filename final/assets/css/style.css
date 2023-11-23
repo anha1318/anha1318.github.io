@@ -1,0 +1,65 @@
+h1 {
+    font-family: 'Niconne';
+    font-size: 50px;
+}
+
+#night-container{
+    background-color: #AFC6D6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#button{
+    background-color: #C0DCE0;
+    border-color: black;
+    padding: 20px;
+    font-family: 'Niconne';
+    font-size: 24px;
+    border-radius: 44px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#button:hover{
+    transform: scale(1.2) ;
+}
+
+.image-1:hover, .image-2:hover, .image-3:hover, .image-4:hover, .image-5:hover, .image-6:hover, .image-7:hover{
+    transform: rotateY(360deg) scale(1.5);
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+
+.dark-mode #night-container {
+    background-color: #C0DCE0;
+}
+
+.dark-mode #button {
+    background-color: #AFC6D6;
+}
+
+.dark-mode .image-1,
+.dark-mode .image-2,
+.dark-mode .image-3,
+.dark-mode .image-4 {
+    display: none;
+}
+
+.dark-mode .image-5,
+.dark-mode .image-6,
+.dark-mode .image-7 {
+    display: block;
+}
+
+.image-1,.image-2,.image-3,.image-4,.image-5,.image-6,.image-7 {
+    max-width: 100%;
+    height: auto;
+}
